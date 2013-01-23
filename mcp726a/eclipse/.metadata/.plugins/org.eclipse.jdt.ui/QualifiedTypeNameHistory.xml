@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="cpw.mods.fml.common.Mod.Init"/>
+<fullyQualifiedTypeName name="skycraft.core.References"/>
+<fullyQualifiedTypeName name="skycraft.core.common.CommonProxySkyCraft"/>
 </qualifiedTypeNameHistroy>

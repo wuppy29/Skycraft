@@ -1,0 +1,5 @@
+package skycraft.core.common;
+
+public class CommonProxy {
+
+}

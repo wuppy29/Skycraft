@@ -1,0 +1,23 @@
+package skycraft;
+
+import skycraft.core.References;
+import skycraft.core.common.CommonProxySkyCraft;
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.Init;
+import cpw.mods.fml.common.SidedProxy;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.network.NetworkMod;
+
+@Mod(modid = References.MOD_ID, name = References.MOD_NAME, version = References.MOD_VERSION)
+@NetworkMod(clientSideRequired = true, serverSideRequired = false)
+public class SkyCraft 
+{
+	@SidedProxy(clientSide = "skycraft.core.client.ClientProxySkyCraft", serverSide = "skycraft.core.common.CommonProxySkyCraft") 
+	public static CommonProxySkyCraft proxy;
+	
+	@Init
+	private void load(FMLInitializationEvent event)
+	{
+		
+	}
+}
