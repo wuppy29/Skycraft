@@ -1,0 +1,7 @@
+package skycraft;
+
+import net.minecraft.creativetab.CreativeTabs;
+
+public class tabSkyCraftArmor extends CreativeTabs {
+
+}

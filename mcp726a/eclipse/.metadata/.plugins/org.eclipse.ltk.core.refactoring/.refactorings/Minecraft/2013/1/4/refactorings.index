@@ -1,3 +1,5 @@
-1358949339058	Rename package 'SkyCraft'
-1358949664528	Rename type 'CommonProxy'
-1358949673919	Rename type 'ClientProxy'
+1358976485624	Delete element
+1358977642327	Move compilation units
+1358977704759	Rename package 'skycraft.creativetabs'
+1358977725914	Rename package 'skycraft.common.creativetabs'
+1358977800867	Move compilation unit

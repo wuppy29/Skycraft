@@ -1,0 +1,288 @@
+[
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "7693a8b190c0d1cc8312dae4e641f1e066403dda",
+    "jarFileModificationDate": "2013-01-21T17:48:56.156Z",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\jsse.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "fe587c5ea7c6a6e7323ea685f72bb4ff73a67809",
+    "jarFileModificationDate": "2013-01-21T17:48:53.939Z",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\zipfs.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "890947da04f2c417e475dc332bf1f810c245093c",
+    "jarFileModificationDate": "2013-01-21T17:48:53.921Z",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\access-bridge-64.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "lwjgl",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "20f2e284a4e6c77981f553647a68cc0b29bc4ca4",
+    "jarFileModificationDate": "2013-01-23T18:09:10.163Z",
+    "location": "C:\\Users\\Gaming\\Documents\\GitHub\\Skycraft\\mcp726a\\jars\\bin\\lwjgl.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "01babbef30bda72abfc92094958246e23c1a9e57",
+    "jarFileModificationDate": "2013-01-21T17:48:56.188Z",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\localedata.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "899ef742a79f8a2d04f6e264eb6a74110204ede5",
+    "jarFileModificationDate": "2013-01-21T17:48:53.923Z",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\dnsns.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "c4c7923b11e98bc8d1d32bfd2ff6363d212ead80",
+    "jarFileModificationDate": "2013-01-21T17:48:53.937Z",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\sunec.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f831655c50b92c41e366442d09511ea84270c45e",
+    "jarFileModificationDate": "2013-01-21T17:48:53.980Z",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\jce.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a3d1a9689f1c8e36ab64fb669df92076771c42f2",
+    "jarFileModificationDate": "2013-01-21T17:48:53.938Z",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\sunmscapi.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "3e75ab5e3cc89e4060f50d86aff7c8bd0e16cf00",
+    "jarFileModificationDate": "2013-01-21T17:48:55.928Z",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\charsets.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "lwjgl_util",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b5cf270f0268a19ffb552da3df294b1c9539ad1d",
+    "jarFileModificationDate": "2013-01-23T18:09:10.165Z",
+    "location": "C:\\Users\\Gaming\\Documents\\GitHub\\Skycraft\\mcp726a\\jars\\bin\\lwjgl_util.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "14a816fe223bd2763f3000b132cb48013c1c7fb0",
+    "jarFileModificationDate": "2013-01-21T17:48:53.924Z",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\jaccess.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "db40bdf56758dd65cf109836063e1eb7c603888c",
+    "jarFileModificationDate": "2013-01-21T17:48:53.981Z",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\jfr.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.objectweb.asm.all",
+    "version": {
+      "major": 4,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "98308890597acb64047f7e896638e0d98753ae82",
+    "jarFileModificationDate": "2013-01-23T18:09:15.179Z",
+    "location": "C:\\Users\\Gaming\\Documents\\GitHub\\Skycraft\\mcp726a\\lib\\asm-all-4.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "minecraft",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "7ec74939e183fde482bd496c79242ae91ce987f3",
+    "jarFileModificationDate": "2013-01-23T21:09:59.818Z",
+    "location": "C:\\Users\\Gaming\\Documents\\GitHub\\Skycraft\\mcp726a\\jars\\bin\\minecraft.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "23e83d875419762c0f2ff297992e14dde6593a31",
+    "jarFileModificationDate": "2013-01-21T17:48:55.855Z",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\rt.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f791fe49ee9f241e20753364efb79d28e6c67eba",
+    "jarFileModificationDate": "2013-01-21T17:48:54.017Z",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\resources.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "com.google.guava",
+    "version": {
+      "major": 12,
+      "minor": 0,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b8e78b9af7bf45900e14c6f958486b6ca682195f",
+    "jarFileModificationDate": "2013-01-23T18:09:15.268Z",
+    "location": "C:\\Users\\Gaming\\Documents\\GitHub\\Skycraft\\mcp726a\\lib\\guava-12.0.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "565df41f8aaa6dceaacc765dde6bec4572c06eed",
+    "jarFileModificationDate": "2013-01-21T17:48:53.938Z",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\sunjce_provider.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jinput",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "12d5c71c51d98755820e9d6625f03d44a4bd2d35",
+    "jarFileModificationDate": "2013-01-23T18:09:10.152Z",
+    "location": "C:\\Users\\Gaming\\Documents\\GitHub\\Skycraft\\mcp726a\\jars\\bin\\jinput.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "bcprov",
+    "version": {
+      "major": 1,
+      "minor": 47,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b6f5d9926b0afbde9f4dbe3db88c5247be7794bb",
+    "jarFileModificationDate": "2013-01-23T18:09:15.230Z",
+    "location": "C:\\Users\\Gaming\\Documents\\GitHub\\Skycraft\\mcp726a\\lib\\bcprov-jdk15on-147.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "argo-2.25",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "bb672829fde76cb163004752b86b0484bd0a7f4b",
+    "jarFileModificationDate": "2013-01-23T18:09:15.161Z",
+    "location": "C:\\Users\\Gaming\\Documents\\GitHub\\Skycraft\\mcp726a\\lib\\argo-2.25.jar",
+    "javaRuntime": false
+  }
+]

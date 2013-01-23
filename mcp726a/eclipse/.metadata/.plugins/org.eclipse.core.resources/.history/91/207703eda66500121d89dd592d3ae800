@@ -1,0 +1,7 @@
+package skycraft.core.creativetabs;
+
+import net.minecraft.creativetab.CreativeTabs;
+
+public class tabSkyCraftMobs extends CreativeTabs {
+
+}
