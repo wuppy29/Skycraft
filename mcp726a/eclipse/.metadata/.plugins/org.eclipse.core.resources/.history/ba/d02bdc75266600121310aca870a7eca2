@@ -1,0 +1,23 @@
+package skycraft.core.items;
+
+import skycraft.SkyCraft;
+import skycraft.core.client.ClientProxySkyCraft;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+
+public class CloudBlockItem extends Item {
+
+        public CloudBlockItem(int id) {
+                super(id);
+                
+                // Constructor Configuration
+                maxStackSize = 64;
+                setCreativeTab(SkyCraft.tabSkyCraftItems);
+                setIconIndex(0);
+                setItemName("Cloud Block");
+        }
+        
+        public String getTextureFile() {
+                return ClientProxySkyCraft.CloudBlockItem_PNG;
+        }
+}

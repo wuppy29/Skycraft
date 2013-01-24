@@ -1,5 +1,7 @@
 package skycraft.core.creativetabs;
 
+import skycraft.SkyCraft;
+import skycraft.core.blocks.CloudBlock;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -16,10 +18,9 @@ public class tabSkyCraftBlocks extends CreativeTabs
 	}
 	
 	@SideOnly(Side.CLIENT)
-	public BlockPortal getTabIconIndex()
+	public Block getTabIconIndex()
 	{
-		//Temp Icon
-		return Block.portal;
+		return (SkyCraft.CloudBlock);
 	}
 	
 	public String getTranslatedTabLabel()

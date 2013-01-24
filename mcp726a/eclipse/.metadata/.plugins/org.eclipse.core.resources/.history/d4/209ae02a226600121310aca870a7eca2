@@ -1,0 +1,24 @@
+package skycraft.items;
+
+import skycraft.SkyCraft;
+import skycraft.core.client.ClientProxySkyCraft;
+import skycraft.core.creativetabs.tabSkyCraftItems;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+
+public class GenericItem extends Item {
+
+        public GenericItem(int id) {
+                super(id);
+                
+                // Constructor Configuration
+                maxStackSize = 64;
+                setCreativeTab(SkyCraft.tabSkyCraftItems);
+                setIconIndex(0);
+                setItemName("genericItem");
+        }
+        
+        public String getTextureFile() {
+                return ClientProxySkyCraft.ITEMS_PNG;
+        }
+}

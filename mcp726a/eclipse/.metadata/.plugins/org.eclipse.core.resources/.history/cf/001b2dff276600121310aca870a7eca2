@@ -1,0 +1,22 @@
+package skycraft.core.blocks;
+
+import skycraft.SkyCraft;
+import skycraft.core.client.ClientProxySkyCraft;
+import skycraft.core.common.CommonProxySkyCraft;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+
+public class CloudBlock extends Block
+{
+
+    public CloudBlock(int id, int texture, Material material)
+    {
+    	super(id, texture, material.snow);
+    }
+    
+    @Override
+    public String getTextureFile () {
+        return CommonProxySkyCraft.CloudBlock_PNG;
+    }
+}
