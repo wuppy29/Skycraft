@@ -65,17 +65,17 @@ public class ItemPortalPlacer extends Item
 				par3World.setBlock(par4 + 3, par5 + 1, par6 - 2, SkyCraftBlocks.CloudBlock.blockID);
 				par3World.setBlock(par4 + 3, par5 + 1, par6 + 2, SkyCraftBlocks.CloudBlock.blockID);
 				
-				par3World.setBlock(par4 + 1, par5 + 1, par6 - 1, Block.stone.blockID);
-				par3World.setBlock(par4 + 2, par5 + 1, par6 - 1, Block.stone.blockID);
-				par3World.setBlock(par4 + 3, par5 + 1, par6 - 1, Block.stone.blockID);
+				par3World.setBlock(par4 + 1, par5 + 1, par6 - 1, SkyCraftBlocks.PortalBlock.blockID);
+				par3World.setBlock(par4 + 2, par5 + 1, par6 - 1, SkyCraftBlocks.PortalBlock.blockID);
+				par3World.setBlock(par4 + 3, par5 + 1, par6 - 1, SkyCraftBlocks.PortalBlock.blockID);
 				
-				par3World.setBlock(par4 + 1, par5 + 1, par6, Block.stone.blockID);
-				par3World.setBlock(par4 + 2, par5 + 1, par6, Block.stone.blockID);
-				par3World.setBlock(par4 + 3, par5 + 1, par6, Block.stone.blockID);
+				par3World.setBlock(par4 + 1, par5 + 1, par6, SkyCraftBlocks.PortalBlock.blockID);
+				par3World.setBlock(par4 + 2, par5 + 1, par6, SkyCraftBlocks.PortalBlock.blockID);
+				par3World.setBlock(par4 + 3, par5 + 1, par6, SkyCraftBlocks.PortalBlock.blockID);
 				
-				par3World.setBlock(par4 + 1, par5 + 1, par6 + 1, Block.stone.blockID);
-				par3World.setBlock(par4 + 2, par5 + 1, par6 + 1, Block.stone.blockID);
-				par3World.setBlock(par4 + 3, par5 + 1, par6 + 1, Block.stone.blockID);
+				par3World.setBlock(par4 + 1, par5 + 1, par6 + 1, SkyCraftBlocks.PortalBlock.blockID);
+				par3World.setBlock(par4 + 2, par5 + 1, par6 + 1, SkyCraftBlocks.PortalBlock.blockID);
+				par3World.setBlock(par4 + 3, par5 + 1, par6 + 1, SkyCraftBlocks.PortalBlock.blockID);
 			}
 			else if(direction == 1)
 			{
@@ -112,17 +112,17 @@ public class ItemPortalPlacer extends Item
 				par3World.setBlock(par4 - 3, par5 + 1, par6 - 2, SkyCraftBlocks.CloudBlock.blockID);
 				par3World.setBlock(par4 - 3, par5 + 1, par6 + 2, SkyCraftBlocks.CloudBlock.blockID);
 				
-				par3World.setBlock(par4 - 1, par5 + 1, par6 - 1, Block.stone.blockID);
-				par3World.setBlock(par4 - 2, par5 + 1, par6 - 1, Block.stone.blockID);
-				par3World.setBlock(par4 - 3, par5 + 1, par6 - 1, Block.stone.blockID);
+				par3World.setBlock(par4 - 1, par5 + 1, par6 - 1, SkyCraftBlocks.PortalBlock.blockID);
+				par3World.setBlock(par4 - 2, par5 + 1, par6 - 1, SkyCraftBlocks.PortalBlock.blockID);
+				par3World.setBlock(par4 - 3, par5 + 1, par6 - 1, SkyCraftBlocks.PortalBlock.blockID);
 				
-				par3World.setBlock(par4 - 1, par5 + 1, par6, Block.stone.blockID);
-				par3World.setBlock(par4 - 2, par5 + 1, par6, Block.stone.blockID);
-				par3World.setBlock(par4 - 3, par5 + 1, par6, Block.stone.blockID);
+				par3World.setBlock(par4 - 1, par5 + 1, par6, SkyCraftBlocks.PortalBlock.blockID);
+				par3World.setBlock(par4 - 2, par5 + 1, par6, SkyCraftBlocks.PortalBlock.blockID);
+				par3World.setBlock(par4 - 3, par5 + 1, par6, SkyCraftBlocks.PortalBlock.blockID);
 				
-				par3World.setBlock(par4 - 1, par5 + 1, par6 + 1, Block.stone.blockID);
-				par3World.setBlock(par4 - 2, par5 + 1, par6 + 1, Block.stone.blockID);
-				par3World.setBlock(par4 - 3, par5 + 1, par6 + 1, Block.stone.blockID);
+				par3World.setBlock(par4 - 1, par5 + 1, par6 + 1, SkyCraftBlocks.PortalBlock.blockID);
+				par3World.setBlock(par4 - 2, par5 + 1, par6 + 1, SkyCraftBlocks.PortalBlock.blockID);
+				par3World.setBlock(par4 - 3, par5 + 1, par6 + 1, SkyCraftBlocks.PortalBlock.blockID);
 			}
 			else if(direction == 2)
 			{
@@ -159,17 +159,17 @@ public class ItemPortalPlacer extends Item
 				par3World.setBlock(par4 + 2, par5 + 1, par6 - 1, SkyCraftBlocks.CloudBlock.blockID);
 				par3World.setBlock(par4 - 2, par5 + 1, par6 - 1, SkyCraftBlocks.CloudBlock.blockID);
 				
-				par3World.setBlock(par4 - 1, par5 + 1, par6 - 1, Block.stone.blockID);
-				par3World.setBlock(par4 - 1, par5 + 1, par6 - 2, Block.stone.blockID);
-				par3World.setBlock(par4 - 1, par5 + 1, par6 - 3, Block.stone.blockID);
+				par3World.setBlock(par4 - 1, par5 + 1, par6 - 1, SkyCraftBlocks.PortalBlock.blockID);
+				par3World.setBlock(par4 - 1, par5 + 1, par6 - 2, SkyCraftBlocks.PortalBlock.blockID);
+				par3World.setBlock(par4 - 1, par5 + 1, par6 - 3, SkyCraftBlocks.PortalBlock.blockID);
 				
-				par3World.setBlock(par4, par5 + 1, par6 - 1, Block.stone.blockID);
-				par3World.setBlock(par4, par5 + 1, par6 - 2, Block.stone.blockID);
-				par3World.setBlock(par4, par5 + 1, par6 - 3, Block.stone.blockID);
+				par3World.setBlock(par4, par5 + 1, par6 - 1, SkyCraftBlocks.PortalBlock.blockID);
+				par3World.setBlock(par4, par5 + 1, par6 - 2, SkyCraftBlocks.PortalBlock.blockID);
+				par3World.setBlock(par4, par5 + 1, par6 - 3, SkyCraftBlocks.PortalBlock.blockID);
 				
-				par3World.setBlock(par4 + 1, par5 + 1, par6 - 1, Block.stone.blockID);
-				par3World.setBlock(par4 + 1, par5 + 1, par6 - 2, Block.stone.blockID);
-				par3World.setBlock(par4 + 1, par5 + 1, par6 - 3, Block.stone.blockID);
+				par3World.setBlock(par4 + 1, par5 + 1, par6 - 1, SkyCraftBlocks.PortalBlock.blockID);
+				par3World.setBlock(par4 + 1, par5 + 1, par6 - 2, SkyCraftBlocks.PortalBlock.blockID);
+				par3World.setBlock(par4 + 1, par5 + 1, par6 - 3, SkyCraftBlocks.PortalBlock.blockID);
 			}
 			else
 			{
@@ -206,17 +206,17 @@ public class ItemPortalPlacer extends Item
 				par3World.setBlock(par4 + 2, par5 + 1, par6 + 1, SkyCraftBlocks.CloudBlock.blockID);
 				par3World.setBlock(par4 - 2, par5 + 1, par6 + 1, SkyCraftBlocks.CloudBlock.blockID);
 				
-				par3World.setBlock(par4 - 1, par5 + 1, par6 + 1, Block.stone.blockID);
-				par3World.setBlock(par4 - 1, par5 + 1, par6 + 2, Block.stone.blockID);
-				par3World.setBlock(par4 - 1, par5 + 1, par6 + 3, Block.stone.blockID);
+				par3World.setBlock(par4 - 1, par5 + 1, par6 + 1, SkyCraftBlocks.PortalBlock.blockID);
+				par3World.setBlock(par4 - 1, par5 + 1, par6 + 2, SkyCraftBlocks.PortalBlock.blockID);
+				par3World.setBlock(par4 - 1, par5 + 1, par6 + 3, SkyCraftBlocks.PortalBlock.blockID);
 				
-				par3World.setBlock(par4, par5 + 1, par6 + 1, Block.stone.blockID);
-				par3World.setBlock(par4, par5 + 1, par6 + 2, Block.stone.blockID);
-				par3World.setBlock(par4, par5 + 1, par6 + 3, Block.stone.blockID);
+				par3World.setBlock(par4, par5 + 1, par6 + 1, SkyCraftBlocks.PortalBlock.blockID);
+				par3World.setBlock(par4, par5 + 1, par6 + 2, SkyCraftBlocks.PortalBlock.blockID);
+				par3World.setBlock(par4, par5 + 1, par6 + 3, SkyCraftBlocks.PortalBlock.blockID);
 				
-				par3World.setBlock(par4 + 1, par5 + 1, par6 + 1, Block.stone.blockID);
-				par3World.setBlock(par4 + 1, par5 + 1, par6 + 2, Block.stone.blockID);
-				par3World.setBlock(par4 + 1, par5 + 1, par6 + 3, Block.stone.blockID);
+				par3World.setBlock(par4 + 1, par5 + 1, par6 + 1, SkyCraftBlocks.PortalBlock.blockID);
+				par3World.setBlock(par4 + 1, par5 + 1, par6 + 2, SkyCraftBlocks.PortalBlock.blockID);
+				par3World.setBlock(par4 + 1, par5 + 1, par6 + 3, SkyCraftBlocks.PortalBlock.blockID);
 			}
 			
 			return true;

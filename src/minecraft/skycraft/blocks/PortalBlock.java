@@ -77,20 +77,14 @@ public class PortalBlock extends Block
     //Updates the blocks bounds based on its current state. Args: world, x, y, z
     public void setBlockBoundsBasedOnState(IBlockAccess par1IBlockAccess, int par2, int par3, int par4)
     {
-        float var5;
-        float var6;
 
         if (par1IBlockAccess.getBlockId(par2 - 1, par3, par4) != this.blockID && par1IBlockAccess.getBlockId(par2 + 1, par3, par4) != this.blockID)
         {
-            var5 = 0.125F;
-            var6 = 0.5F;
-            this.setBlockBounds(0.5F - var5, 0.0F, 0.5F - var6, 0.5F + var5, 1.0F, 0.5F + var6);
+            this.setBlockBounds(0F, 0.4F, 0F, 1F, 0.6F, 1F);
         }
         else
         {
-            var5 = 0.5F;
-            var6 = 0.125F;
-            this.setBlockBounds(0.5F - var5, 0.0F, 0.5F - var6, 0.5F + var5, 1.0F, 0.5F + var6);
+            this.setBlockBounds(0F, 0.4F, 0F, 1F, 0.6F, 1F);
         }
     }
     
