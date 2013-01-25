@@ -32,6 +32,9 @@ public class CloudBlock extends Block
         return false;
     }
     
+    //Pistons can move block = 0
+    //Pistons can move on top of block = 1
+    //Pistons can't move at all = 2
     public int getMobilityFlag()
     {
         return 2;
