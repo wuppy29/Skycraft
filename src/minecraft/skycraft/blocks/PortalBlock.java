@@ -26,7 +26,6 @@ public class PortalBlock extends Block
     	this.setTickRandomly(true);
     }
 
-    @SideOnly(Side.CLIENT)
     public int getRenderBlockPass()
     {
         return 1;
@@ -87,8 +86,7 @@ public class PortalBlock extends Block
             this.setBlockBounds(0F, 0.4F, 0F, 1F, 0.6F, 1F);
         }
     }
-    
-    @SideOnly(Side.CLIENT)
+
     public void randomDisplayTick(World par1World, int par2, int par3, int par4, Random par5Random)
     {
         for (int var6 = 0; var6 < 4; ++var6)
@@ -131,6 +129,11 @@ public class PortalBlock extends Block
     public int idPicked(World par1World, int par2, int par3, int par4)
     {
         return 0;
+    }
+    
+    public String getTextureFile() 
+    {
+        return CommonProxySkyCraft.Blocks_PNG;
     }
  
 }

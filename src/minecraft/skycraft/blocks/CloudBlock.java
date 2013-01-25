@@ -21,7 +21,6 @@ public class CloudBlock extends Block
     	this.setCreativeTab(SkyCraft.tabSkyCraftBlocks);
     }
 
-    @SideOnly(Side.CLIENT)
     public int getRenderBlockPass()
     {
         return 1;
@@ -37,9 +36,8 @@ public class CloudBlock extends Block
         return 2;
     }
     
-    @Override
     public String getTextureFile() 
     {
-        return CommonProxySkyCraft.CloudBlock_PNG;
+        return CommonProxySkyCraft.Blocks_PNG;
     }
 }

@@ -21,7 +21,7 @@ public class TabSkyCraftBlocks extends CreativeTabs
 	@SideOnly(Side.CLIENT)
 	public int getTabIconItemIndex()
 	{
-		return SkyCraftBlocks.CloudBlock.blockID;
+		return SkyCraftBlocks.cloudBlock.blockID;
 	}
 	
 	public String getTranslatedTabLabel()

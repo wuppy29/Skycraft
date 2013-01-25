@@ -9,6 +9,6 @@ public class ClientProxySkyCraft extends CommonProxySkyCraft
 	@Override
 	public void loadTextures() 
 	{
-        MinecraftForgeClient.preloadTexture(CloudBlock_PNG);
+        MinecraftForgeClient.preloadTexture(Blocks_PNG);
 	}
 }
