@@ -8,7 +8,6 @@ import skycraft.blocks.CloudBlock;
 import skycraft.core.References;
 import skycraft.core.common.CommonProxySkyCraft;
 
-import skycraft.core.blocks.*;
 import skycraft.creativetabs.*;
 
 import cpw.mods.fml.common.Mod;
