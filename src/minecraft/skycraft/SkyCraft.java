@@ -48,5 +48,8 @@ public class SkyCraft
 		
 		//SkyCraftItems contains all the items + item code
 		SkyCraftItems.loadItems();
+		
+		//SkyCraftItems contains all the recipes + recipe code
+		SkyCraftRecipes.loadRecipies();
 	}
 }
