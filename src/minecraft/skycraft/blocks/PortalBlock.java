@@ -1,14 +1,20 @@
 package skycraft.blocks;
 
+import java.util.Iterator;
+import java.util.List;
 import java.util.Random;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.item.EntityItem;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemMonsterPlacer;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import skycraft.SkyCraft;
+import skycraft.SkyCraftBlocks;
 import skycraft.core.common.CommonProxySkyCraft;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -46,27 +52,6 @@ public class PortalBlock extends Block
         return 0;
     }
     
-    public void updateTick(World par1World, int par2, int par3, int par4, Random par5Random)
-    {
-        super.updateTick(par1World, par2, par3, par4, par5Random);
-
-        if (par1World.provider.isSurfaceWorld() && par5Random.nextInt(2000) < par1World.difficultySetting)
-        {
-            int var6;
-
-            for (var6 = par3; !par1World.doesBlockHaveSolidTopSurface(par2, var6, par4) && var6 > 0; --var6)
-            {
-                ;
-            }
-
-            if (var6 > 0 && !par1World.isBlockNormalCube(par2, var6 + 1, par4))
-            {
-                Entity var7 = ItemMonsterPlacer.spawnCreature(par1World, 57, (double)par2 + 0.5D, (double)var6 + 1.1D, (double)par4 + 0.5D);
-
-            }
-        }
-    }
-
     //Returns a bounding box from the pool of bounding boxes (this means this box can change after the pool has been cleared to be reused)
     public AxisAlignedBB getCollisionBoundingBoxFromPool(World par1World, int par2, int par3, int par4)
     {

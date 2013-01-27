@@ -4,6 +4,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
+import cpw.mods.fml.common.TickType;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import skycraft.SkyCraft;
@@ -30,7 +31,6 @@ public class CloudBlock extends Block
     	this.setHardness(0.01f);
     	this.setStepSound(Block.soundSnowFootstep);
     	this.setCreativeTab(SkyCraft.tabSkyCraftBlocks);
-    	this.setTickRandomly(true);
     }
 
     public int getRenderBlockPass()
@@ -45,12 +45,18 @@ public class CloudBlock extends Block
     
     public int getMobilityFlag()
     {
-        return 2;
+        return 1;
     }
     
     public String getTextureFile() 
     {
         return CommonProxySkyCraft.Blocks_PNG;
+    }
+    
+    //trys to update on tick
+    @Override
+    public void onBlockAdded(World par1World, int par2, int par3, int par4) {
+       par1World.scheduleBlockUpdate(par2, par3, par4, SkyCraftBlocks.cloudBlock.blockID, 1);
     }
     
     public void updateTick(World par1World, int par2, int par3, int par4, Random par5Random) 
@@ -120,5 +126,8 @@ public class CloudBlock extends Block
     			}
     		}
     	}
+    	
+    	//sends for the update
+    	par1World.scheduleBlockUpdate(par2, par3, par4, SkyCraftBlocks.cloudBlock.blockID, 1);
     }
 }
