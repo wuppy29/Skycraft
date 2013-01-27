@@ -1,5 +1,7 @@
 package skycraft.blocks;
 
+import java.util.Iterator;
+import java.util.List;
 import java.util.Random;
 
 import cpw.mods.fml.relauncher.Side;
@@ -11,6 +13,11 @@ import skycraft.core.common.CommonProxySkyCraft;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.item.EntityItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
@@ -68,7 +75,48 @@ public class CloudBlock extends Block
     					par1World.getBlockId(par2 + 1, par3, par4 + 3) == 0 && par1World.getBlockId(par2 + 2, par3, par4 + 3) == 0 &&
     					par1World.getBlockId(par2 + 3, par3, par4 + 3) == 0)
     			{
-    				System.out.println("good portal");
+    				ItemStack stack = null;
+    				EntityItem item = null;
+    				List list = null;
+    				
+    				list = par1World.getEntitiesWithinAABB(EntityItem.class, AxisAlignedBB.getAABBPool().addOrModifyAABBInPool(par2, par3, par4, par2 + 3, par3 + 1, par4 + 3));
+    				
+    				if(list != null)
+    				{
+    					Iterator iterator = list.iterator();
+    					
+    					while(iterator.hasNext())
+    					{
+    						Entity entity = (Entity)iterator.next();
+    						
+    						if(entity instanceof EntityItem)
+    						{
+    							item = (EntityItem) entity;
+    							stack = item.func_92014_d();
+    						}
+    					}
+    				}
+    				
+    				if(stack != null)
+    				{
+    					if(stack.getItem() == Item.feather)
+        				{
+        					par1World.setBlock(par2 + 1, par3, par4 + 1, SkyCraftBlocks.portalBlock.blockID); 
+        					par1World.setBlock(par2 + 2, par3, par4 + 1, SkyCraftBlocks.portalBlock.blockID);
+        	    			par1World.setBlock(par2 + 3, par3, par4 + 1, SkyCraftBlocks.portalBlock.blockID);
+        	    			par1World.setBlock(par2 + 1, par3, par4 + 2, SkyCraftBlocks.portalBlock.blockID);
+        	    			par1World.setBlock(par2 + 2, par3, par4 + 2, SkyCraftBlocks.portalBlock.blockID);
+        	    			par1World.setBlock(par2 + 3, par3, par4 + 2, SkyCraftBlocks.portalBlock.blockID);
+        	    			par1World.setBlock(par2 + 1, par3, par4 + 3, SkyCraftBlocks.portalBlock.blockID);
+        	    			par1World.setBlock(par2 + 2, par3, par4 + 3, SkyCraftBlocks.portalBlock.blockID);
+        	    			par1World.setBlock(par2 + 3, par3, par4 + 3, SkyCraftBlocks.portalBlock.blockID);
+        	    			
+        	    			if(item != null)
+        	    			{
+        	    				item.setDead();
+        	    			}
+        				}
+    				}
     			}
     		}
     	}
