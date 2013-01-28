@@ -2,6 +2,7 @@ package skycraft;
 
 import skycraft.items.ItemCloudCapsule;
 import skycraft.items.ItemCloudTube;
+import skycraft.items.ItemCork;
 import skycraft.items.ItemPortalPlacer;
 import skycraft.items.ItemTreeBark;
 import skycraft.items.ItemTreeBarkMesh;
@@ -17,8 +18,11 @@ public class SkyCraftItems
 	public static final Item treeBark = new ItemTreeBark(4001).setIconCoord(0, 1).setItemName("Tree Bark");
 	public static final Item treeBarkMesh = new ItemTreeBarkMesh(4002).setIconCoord(0, 2).setItemName("Tree Bark Mesh");
 	
-	public static final Item cloudTube = new ItemCloudTube(4003).setIconCoord(1, 0).setItemName("Cloud Tube");
-	public static final Item cloudCapsule = new ItemCloudCapsule(4004).setIconCoord(2, 0).setItemName("Cloud Capsule");
+	public static final Item cork = new ItemCork(4003).setIconCoord(0, 0).setItemName("Cork");
+	
+	public static final Item cloudTube = new ItemCloudTube(4004).setIconCoord(1, 0).setItemName("Cloud Tube");
+	
+	public static final Item cloudCapsule = new ItemCloudCapsule(4005).setIconCoord(0, 2).setItemName("Cloud Capsule");
 	
 	public static void loadItems()
 	{
@@ -30,6 +34,9 @@ public class SkyCraftItems
 
 		LanguageRegistry.addName(treeBarkMesh, "Tree Bark Mesh");
 		GameRegistry.registerItem(treeBarkMesh, "Tree Bark Mesh");
+		
+		LanguageRegistry.addName(cork, "Cork");
+		GameRegistry.registerItem(cork, "Cork");
 		
 		LanguageRegistry.addName(cloudTube, "Cloud Tube");
 		GameRegistry.registerItem(cloudTube, "Cloud Tube");

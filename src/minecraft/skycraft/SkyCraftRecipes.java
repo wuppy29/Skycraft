@@ -7,6 +7,7 @@ public class SkyCraftRecipes
 	{
 		skycraft.recipes.ItemBarkMesh.loadrecipe();
 		skycraft.recipes.ItemCloudTube.loadrecipe();
+		skycraft.recipes.ItemCloudCapsule.loadrecipe();
 	}
 
 }
