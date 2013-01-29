@@ -1,10 +1,12 @@
 package skycraft.creativetabs;
 
+import skycraft.SkyCraftItems;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockPortal;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
 
 public class TabSkyCraftItems extends CreativeTabs 
 {
@@ -15,10 +17,10 @@ public class TabSkyCraftItems extends CreativeTabs
 	}
 	
 	@SideOnly(Side.CLIENT)
-	public BlockPortal getTabIconIndex()
+	public Item getTabIconIndex()
 	{
 		//Temp Icon
-		return Block.portal;
+		return SkyCraftItems.portalPlacer;
 	}
 	
 	public String getTranslatedTabLabel()

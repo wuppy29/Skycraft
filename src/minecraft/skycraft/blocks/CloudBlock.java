@@ -29,6 +29,7 @@ public class CloudBlock extends Block
     	super(id, texture, material);
     	this.setBlockName("Cloud");
     	this.setHardness(0.01f);
+    	this.setLightOpacity(3);
     	this.setStepSound(Block.soundSnowFootstep);
     	this.setCreativeTab(SkyCraft.tabSkyCraftBlocks);
     }
