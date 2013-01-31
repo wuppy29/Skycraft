@@ -17,10 +17,9 @@ public class TabSkyCraftItems extends CreativeTabs
 	}
 	
 	@SideOnly(Side.CLIENT)
-	public Item getTabIconIndex()
+	public int getTabIconItemIndex()
 	{
-		//Temp Icon
-		return SkyCraftItems.portalPlacer;
+		return SkyCraftItems.portalPlacer.itemID;
 	}
 	
 	public String getTranslatedTabLabel()

@@ -1,5 +1,7 @@
 package skycraft;
 
+import net.minecraft.item.crafting.FurnaceRecipes;
+
 public class SkyCraftRecipes 
 {
 
