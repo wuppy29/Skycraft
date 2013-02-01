@@ -1,15 +1,15 @@
 package skycraft;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraftforge.common.MinecraftForge;
-import skycraft.blocks.CloudBlock;
+import net.minecraftforge.common.DimensionManager;
 import skycraft.core.References;
 import skycraft.core.common.CommonProxySkyCraft;
-
-import skycraft.creativetabs.*;
-
+import skycraft.creativetabs.TabSkyCraftArmor;
+import skycraft.creativetabs.TabSkyCraftBlocks;
+import skycraft.creativetabs.TabSkyCraftItems;
+import skycraft.creativetabs.TabSkyCraftMobs;
+import skycraft.creativetabs.TabSkyCraftTools;
+import skycraft.world.WorldProviderSky;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.PreInit;
@@ -17,8 +17,6 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
-import cpw.mods.fml.common.registry.GameRegistry;
-import cpw.mods.fml.common.registry.LanguageRegistry;
 
 @Mod(modid = References.MOD_ID, name = References.MOD_NAME, version = References.MOD_VERSION)
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
@@ -33,6 +31,8 @@ public class SkyCraft
 	public static CreativeTabs tabSkyCraftArmor = new TabSkyCraftArmor(CreativeTabs.getNextID(), "SkyCraft Armor");
 	public static CreativeTabs tabSkyCraftTools = new TabSkyCraftTools(CreativeTabs.getNextID(), "SkyCraft Tools");
 	public static CreativeTabs tabSkyCraftMobs = new TabSkyCraftMobs(CreativeTabs.getNextID(), "SkyCraft Mobs");
+	
+	public static int dimension = 2;
 	
 	@PreInit
 	public void init(FMLPreInitializationEvent event)
@@ -51,5 +51,8 @@ public class SkyCraft
 		
 		//SkyCraftItems contains all the recipes + recipe code
 		SkyCraftRecipes.loadRecipies();
+		
+		DimensionManager.registerProviderType(dimension, WorldProviderSky.class, false);
+		DimensionManager.registerDimension(dimension, dimension);
 	}
 }

@@ -7,6 +7,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.item.EntityItem;
+import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemMonsterPlacer;
 import net.minecraft.item.ItemStack;
@@ -16,6 +17,7 @@ import net.minecraft.world.World;
 import skycraft.SkyCraft;
 import skycraft.SkyCraftBlocks;
 import skycraft.core.common.CommonProxySkyCraft;
+import skycraft.teleporter.SkyTeleporter;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
@@ -32,6 +34,26 @@ public class PortalBlock extends Block
     	this.setTickRandomly(true);
     }
 
+	public void onEntityCollidedWithBlock(World par1World, int par2, int par3, int par4, Entity par5Entity)
+	{
+		if (par5Entity.ridingEntity == null && par5Entity.riddenByEntity == null)
+		{
+		   if (par5Entity instanceof EntityPlayerMP)
+		   {
+		    
+		   }
+		   EntityPlayerMP thePlayer = (EntityPlayerMP) par5Entity;
+		   if (par5Entity.dimension != SkyCraft.dimension)
+		   {
+			   thePlayer.mcServer.getConfigurationManager().transferPlayerToDimension(thePlayer, SkyCraft.dimension, new SkyTeleporter(thePlayer.mcServer.worldServerForDimension(SkyCraft.dimension)));
+		   }
+		   else
+		   {
+			   thePlayer.mcServer.getConfigurationManager().transferPlayerToDimension(thePlayer, 0, new SkyTeleporter(thePlayer.mcServer.worldServerForDimension(0)));
+		   }
+		}
+	}
+	
     public int getRenderBlockPass()
     {
         return 1;
