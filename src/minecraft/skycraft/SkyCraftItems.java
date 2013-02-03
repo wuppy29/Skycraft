@@ -18,14 +18,14 @@ public class SkyCraftItems
 	public static final Item bark = new ItemTreeBark(4001);
 	public static final String[] barkTypeNames = new String[] {"Oak", "Spruce", "Birch", "Jungle"};
 	
-	public static final Item treeBarkMesh = new ItemTreeBarkMesh(4005).setIconCoord(0, 2);
+	public static final Item treeBarkMesh = new ItemTreeBarkMesh(4002).setIconCoord(0, 2);
 	public static final String[] barkMeshNames = new String[] {"Oak", "Spruce", "Birch", "Jungle"};
 	
-	public static final Item cork = new ItemCork(4006).setIconCoord(2, 0).setItemName("Cork");
+	public static final Item cork = new ItemCork(4003).setIconCoord(2, 0).setItemName("Cork");
 	
-	public static final Item cloudTube = new ItemCloudTube(4007).setIconCoord(1, 0).setItemName("Cloud Tube");
+	public static final Item cloudTube = new ItemCloudTube(4004).setIconCoord(1, 0).setItemName("Cloud Tube");
 	
-	public static final Item cloudCapsule = new ItemCloudCapsule(4008).setIconCoord(3, 0);
+	public static final Item cloudCapsule = new ItemCloudCapsule(4005).setIconCoord(3, 0);
 	public static final String[] cloudCapsuleIds = new String[] {"", ":1", ":2", ":3", ":4", ":5", ":6", ":7", ":8", ":9", ":10"};	
 	
 	

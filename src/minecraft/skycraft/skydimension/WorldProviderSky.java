@@ -1,4 +1,4 @@
-package skycraft.world;
+package skycraft.skydimension;
 
 import net.minecraft.world.WorldProvider;
 import net.minecraft.world.biome.BiomeGenBase;

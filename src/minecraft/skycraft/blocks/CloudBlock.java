@@ -15,6 +15,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -117,7 +118,8 @@ public class CloudBlock extends Block
         	    			par1World.setBlock(par2 + 1, par3, par4 + 3, SkyCraftBlocks.portalBlock.blockID);
         	    			par1World.setBlock(par2 + 2, par3, par4 + 3, SkyCraftBlocks.portalBlock.blockID);
         	    			par1World.setBlock(par2 + 3, par3, par4 + 3, SkyCraftBlocks.portalBlock.blockID);
-        	    			
+        	    			par1World.addWeatherEffect(new EntityLightningBolt(par1World, par2 + 2, par3, par4 + 2));
+
         	    			if(item != null)
         	    			{
         	    				item.setDead();
@@ -128,7 +130,7 @@ public class CloudBlock extends Block
     		}
     	}
     	
-    	//sends for the update
+    	//Sends for the update
     	par1World.scheduleBlockUpdate(par2, par3, par4, SkyCraftBlocks.cloudBlock.blockID, 1);
     }
 }

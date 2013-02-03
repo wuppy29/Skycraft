@@ -16,8 +16,9 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import skycraft.SkyCraft;
 import skycraft.SkyCraftBlocks;
+import skycraft.core.client.ClientProxySkyCraft;
 import skycraft.core.common.CommonProxySkyCraft;
-import skycraft.teleporter.SkyTeleporter;
+import skycraft.skydimension.SkyTeleporter;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
@@ -40,9 +41,7 @@ public class PortalBlock extends Block
 		{
 		   if (par5Entity instanceof EntityPlayerMP)
 		   {
-		    
-		   }
-		   EntityPlayerMP thePlayer = (EntityPlayerMP) par5Entity;
+		     EntityPlayerMP thePlayer = (EntityPlayerMP) par5Entity;
 		   if (par5Entity.dimension != SkyCraft.dimension)
 		   {
 			   thePlayer.mcServer.getConfigurationManager().transferPlayerToDimension(thePlayer, SkyCraft.dimension, new SkyTeleporter(thePlayer.mcServer.worldServerForDimension(SkyCraft.dimension)));
@@ -51,6 +50,8 @@ public class PortalBlock extends Block
 		   {
 			   thePlayer.mcServer.getConfigurationManager().transferPlayerToDimension(thePlayer, 0, new SkyTeleporter(thePlayer.mcServer.worldServerForDimension(0)));
 		   }
+		   }
+		  
 		}
 	}
 	
@@ -119,7 +120,6 @@ public class PortalBlock extends Block
                 var17 = (double)(par5Random.nextFloat() * 2.0F * (float)var19);
             }
 
-            par1World.spawnParticle("portal", var7, var9, var11, var13, var15, var17);
         }
     }
     

@@ -9,7 +9,7 @@ import skycraft.creativetabs.TabSkyCraftBlocks;
 import skycraft.creativetabs.TabSkyCraftItems;
 import skycraft.creativetabs.TabSkyCraftMobs;
 import skycraft.creativetabs.TabSkyCraftTools;
-import skycraft.world.WorldProviderSky;
+import skycraft.skydimension.WorldProviderSky;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.PreInit;
@@ -48,6 +48,9 @@ public class SkyCraft
 		
 		//SkyCraftItems contains all the items + item code
 		SkyCraftItems.loadItems();
+		
+		//SkyCraftOres contains all the ores + ore code
+		SkyCraftOres.loadOres();
 		
 		//SkyCraftItems contains all the recipes + recipe code
 		SkyCraftRecipes.loadRecipies();
