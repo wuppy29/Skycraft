@@ -1,7 +1,12 @@
 package skycraft;
 
+import java.util.Random;
+
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.world.World;
+import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraftforge.common.DimensionManager;
+import skycraft.core.FuelHandler;
 import skycraft.core.References;
 import skycraft.core.common.CommonProxySkyCraft;
 import skycraft.creativetabs.TabSkyCraftArmor;
@@ -17,6 +22,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
+import cpw.mods.fml.common.registry.GameRegistry;
 
 @Mod(modid = References.MOD_ID, name = References.MOD_NAME, version = References.MOD_VERSION)
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
@@ -55,7 +61,12 @@ public class SkyCraft
 		//SkyCraftItems contains all the recipes + recipe code
 		SkyCraftRecipes.loadRecipies();
 		
+		GameRegistry.registerFuelHandler(new FuelHandler());
+		
+		GameRegistry.registerWorldGenerator(new skycraft.core.WorldGenHandler());
+		
 		DimensionManager.registerProviderType(dimension, WorldProviderSky.class, false);
 		DimensionManager.registerDimension(dimension, dimension);
 	}
+
 }

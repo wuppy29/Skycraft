@@ -21,7 +21,7 @@ public class ItemTreeBarkMesh extends Item
 		this.setCreativeTab(SkyCraft.tabSkyCraftItems);
 		this.setMaxDamage(0);
 		this.setHasSubtypes(true);
-		this.setIconCoord(0, 1);
+		this.setIconCoord(0, 2);
 		this.setItemName("Bark Mesh");
 	}
 	

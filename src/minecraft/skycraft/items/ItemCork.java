@@ -10,7 +10,8 @@ public class ItemCork extends Item
 	{
 		super(id);
 		this.setCreativeTab(SkyCraft.tabSkyCraftItems);
-	
+		this.setIconCoord(2, 0);
+		this.setItemName("Cork");
 	}
 	
 	public String getTextureFile()

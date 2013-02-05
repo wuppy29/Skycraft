@@ -4,17 +4,15 @@ import skycraft.SkyCraft;
 import skycraft.core.common.CommonProxySkyCraft;
 import net.minecraft.item.Item;
 
-public class ItemCloudTube extends Item
-{
+public class ItemAlchroznicCoal extends Item {
 
-	public ItemCloudTube(int id) 
-	{
-		super(id);
+	public ItemAlchroznicCoal(int par1) {
+		super(par1);
 		this.setCreativeTab(SkyCraft.tabSkyCraftItems);
-		this.setIconCoord(1, 0);
-		this.setItemName("Cloud Tube");
+		this.setIconCoord(0, 3);
+		this.setItemName("Alchroznic Coal");
 	}
-	
+
 	public String getTextureFile()
     {
             return CommonProxySkyCraft.Items_PNG;

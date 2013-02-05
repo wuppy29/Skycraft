@@ -17,6 +17,8 @@ public class ItemPortalPlacer extends Item
 	{
 		super(id);
 		this.setCreativeTab(SkyCraft.tabSkyCraftItems);
+		this.setIconCoord(0, 0);
+		this.setItemName("Portal Placer");
 	}
 	
 	public String getTextureFile()

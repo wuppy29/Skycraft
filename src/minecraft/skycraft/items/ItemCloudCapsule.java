@@ -21,7 +21,7 @@ public class ItemCloudCapsule extends Item
 		this.setCreativeTab(SkyCraft.tabSkyCraftItems);
 		this.setMaxDamage(0);
 		this.setHasSubtypes(true);
-		this.setIconCoord(0, 1);
+		this.setIconCoord(3, 0);
 		this.setItemName("Cloud Capsules");
 	}
 	

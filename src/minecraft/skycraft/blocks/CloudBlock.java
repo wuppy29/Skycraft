@@ -118,7 +118,7 @@ public class CloudBlock extends Block
         	    			par1World.setBlock(par2 + 1, par3, par4 + 3, SkyCraftBlocks.portalBlock.blockID);
         	    			par1World.setBlock(par2 + 2, par3, par4 + 3, SkyCraftBlocks.portalBlock.blockID);
         	    			par1World.setBlock(par2 + 3, par3, par4 + 3, SkyCraftBlocks.portalBlock.blockID);
-        	    			par1World.addWeatherEffect(new EntityLightningBolt(par1World, par2 + 2, par3, par4 + 2));
+        	    			par1World.addWeatherEffect(new EntityLightningBolt(par1World, par2 + 2, par3 + 1, par4 + 2));
 
         	    			if(item != null)
         	    			{
