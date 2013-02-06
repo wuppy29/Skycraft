@@ -33,7 +33,6 @@ public class SkyCraftItems
 	
 	public static void loadItems()
 	{
-		
 		for (int var1 = 0; var1 < 4; ++var1) 
 		{
 			ItemStack barkTypeStack = new ItemStack(bark, 1, var1);

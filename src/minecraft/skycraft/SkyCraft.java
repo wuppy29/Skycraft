@@ -44,6 +44,7 @@ public class SkyCraft
 	public void init(FMLPreInitializationEvent event)
 	{
 		proxy.loadTextures();
+		proxy.registerTickHandler();
 	}
 	
 	@Init
